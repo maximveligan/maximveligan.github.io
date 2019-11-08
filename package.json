@@ -7,8 +7,10 @@
     "create-wasm-app": ".bin/create-wasm-app.js"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d ./",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/rustwasm/create-wasm-app/issues"
   },
-  "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
+  "homepage": "https://maximveligan.com/nes",
   "devDependencies": {
     "hello-wasm-pack": "^0.1.0",
     "webpack": "^4.29.3",
@@ -34,6 +36,7 @@
     "copy-webpack-plugin": "^5.0.0"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "nes-wasm": "file:../pkg"
   }
 }
