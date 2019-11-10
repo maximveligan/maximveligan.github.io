@@ -5,6 +5,7 @@
     <title>Nes Emulator</title>
     <style>
       body {
+        background-color: #E6EEFF;
         position: absolute;
         top: 0;
         left: 0;
@@ -33,12 +34,12 @@
           display:inline;
       }
       #nes-wasm-canvas {
-        padding: 10px;
         margin: 20px;
-        border: 2px solid black; 
+        border: 5px solid #00151A; 
       }
     </style>
   </head>
+  <h1>NES Emulator</h1>
   <input type="file" id="file-input" style="display:none;"/>
   <label for="file-input" class="button">Select a rom</label>
   <body>
@@ -49,6 +50,7 @@
     </div>
     <canvas id="nes-wasm-canvas"></canvas>
     <script src="./bootstrap.js"></script>
+    <h1>Controller Bindings</h1>
     <table cellpadding="10">
       <tr>
         <th>Nes Button</th>
