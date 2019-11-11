@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8">
     <title>Nes Emulator</title>
-    <style>
-      body {
-        background-color: #E6EEFF;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      table, th, td {
-        padding: 10px;
-        border: 1px solid black; 
-        border-collapse: collapse;
-      }
-      .button {
-        -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-      }
-      #pause_container {
-        text-align:center;
-        padding: 10px;
-      }
-      #pause_label, #pause_button {
-          display:inline;
-      }
-      #nes-wasm-canvas {
-        margin: 20px;
-        border: 5px solid #00151A; 
-      }
-    </style>
   </head>
   <h1>NES Emulator</h1>
-  <input type="file" id="file-input" style="display:none;"/>
+  <input type="file" id="file-input"/>
   <label for="file-input" class="button">Select a rom</label>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
